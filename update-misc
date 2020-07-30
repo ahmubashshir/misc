@@ -1,0 +1,20 @@
+#!/bin/bash
+{
+	echo creating pc-config html
+	{
+		echo '$ inxi -ADGmMnrS'
+		sudo inxi -c 18 -ADGmMnrS
+	}|ansi2html --bg=dark --palette=dracula > inxi.html
+	patch -s --no-backup-if-mismatch -p1 <<EOF
+diff --git a/inxi.html b/inxi.html
+index d074a00..03ef8dd 100644
+--- a/inxi.html
++++ b/inxi.html
+@@ -292,6 +291,7 @@ pre { white-space: pre-wrap; }
+ span { display: inline-block; }
+ */
+ </style>
++<title>My PC Config: inxi -ADGmMnrS</title>
+ </head>
+EOF
+}
