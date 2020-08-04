@@ -1,9 +1,10 @@
 #!/bin/bash
 {
+	inxi_args=( -ADGCmMnrS )
 	echo creating pc-config html
 	{
-		echo '$ inxi -ADGmMnrS'
-		sudo inxi -c 18 -ADGmMnrS
+		echo "$ inxi ${inxi_args[@]}"
+		sudo inxi -c 18 "${inxi_args[@]}"
 	}|ansi2html --bg=dark --palette=dracula > inxi.html
 	patch -s --no-backup-if-mismatch -p1 <<EOF
 diff --git a/inxi.html b/inxi.html
@@ -14,7 +15,7 @@ index d074a00..03ef8dd 100644
  span { display: inline-block; }
  */
  </style>
-+<title>My PC Config: inxi -ADGmMnrS</title>
++<title>My PC Config: inxi ${inxi_args[@]}</title>
  </head>
 EOF
 }
