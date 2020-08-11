@@ -5,17 +5,5 @@
 	{
 		echo "$ inxi ${inxi_args[@]}"
 		sudo inxi -c 18 "${inxi_args[@]}"
-	}|ansi2html --bg=dark --palette=dracula > inxi.html
-	patch -s --no-backup-if-mismatch -p1 <<EOF
-diff --git a/inxi.html b/inxi.html
-index d074a00..03ef8dd 100644
---- a/inxi.html
-+++ b/inxi.html
-@@ -292,6 +291,7 @@ pre { white-space: pre-wrap; }
- span { display: inline-block; }
- */
- </style>
-+<title>My PC Config: inxi ${inxi_args[@]}</title>
- </head>
-EOF
+	}|ansi2html --output-encoding=utf8 -s mint-terminal -t "My PC Config: inxi ${inxi_args[@]}" > inxi.html
 }
