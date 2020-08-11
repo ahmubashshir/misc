@@ -10,8 +10,8 @@
 .body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
 .inv_foreground { color: #000000; }
 .inv_background { background-color: #AAAAAA; }
-.ansi32 { color: #4E9A06; }
-.ansi33 { color: #C4A000; }
+.ansi32 { color: #50FA7B; }
+.ansi33 { color: #F1FA8C; }
 </style>
 </head>
 <body class="body_foreground body_background" style="font-size: normal;" >
@@ -24,7 +24,7 @@ $ inxi -ADGCmMnrS
   <span class="ansi32">Type:</span><span class="ansi33"> Desktop </span><span class="ansi32">Mobo:</span><span class="ansi33"> MSI </span><span class="ansi32">model:</span><span class="ansi33"> H81M-E33 (MS-7817) </span><span class="ansi32">v:</span><span class="ansi33"> 1.0 </span><span class="ansi32">serial:</span><span class="ansi33"> N/A </span>
   <span class="ansi32">UEFI:</span><span class="ansi33"> American Megatrends </span><span class="ansi32">v:</span><span class="ansi33"> 6.8 </span><span class="ansi32">date:</span><span class="ansi33"> 07/17/2018 </span>
 <span class="ansi32">Memory:</span>
-  <span class="ansi32">RAM:</span><span class="ansi33"> </span><span class="ansi32">total:</span><span class="ansi33"> 7.66 GiB </span><span class="ansi32">used:</span><span class="ansi33"> 2.55 GiB (33.4%) </span>
+  <span class="ansi32">RAM:</span><span class="ansi33"> </span><span class="ansi32">total:</span><span class="ansi33"> 7.66 GiB </span><span class="ansi32">used:</span><span class="ansi33"> 3.30 GiB (43.1%) </span>
   <span class="ansi32">Array-1:</span><span class="ansi33"> </span><span class="ansi32">capacity:</span><span class="ansi33"> 32 GiB </span><span class="ansi32">slots:</span><span class="ansi33"> 4 </span><span class="ansi32">EC:</span><span class="ansi33"> None </span>
   <span class="ansi32">Device-1:</span><span class="ansi33"> ChannelA-DIMM0 </span><span class="ansi32">size:</span><span class="ansi33"> 4 GiB </span><span class="ansi32">speed:</span><span class="ansi33"> 1600 MT/s </span>
   <span class="ansi32">Device-2:</span><span class="ansi33"> ChannelA-DIMM1 </span><span class="ansi32">size:</span><span class="ansi33"> No Module Installed </span>
@@ -32,7 +32,7 @@ $ inxi -ADGCmMnrS
   <span class="ansi32">Device-4:</span><span class="ansi33"> ChannelB-DIMM1 </span><span class="ansi32">size:</span><span class="ansi33"> No Module Installed </span>
 <span class="ansi32">CPU:</span>
   <span class="ansi32">Topology:</span><span class="ansi33"> Dual Core </span><span class="ansi32">model:</span><span class="ansi33"> Intel Pentium G3250 </span><span class="ansi32">bits:</span><span class="ansi33"> 64 </span><span class="ansi32">type:</span><span class="ansi33"> MCP </span><span class="ansi32">L2 cache:</span><span class="ansi33"> 3072 KiB </span>
-  <span class="ansi32">Speed:</span><span class="ansi33"> 1377 MHz </span><span class="ansi32">min/max:</span><span class="ansi33"> 800/3200 MHz </span><span class="ansi32">Core speeds (MHz):</span><span class="ansi33"> </span><span class="ansi32">1:</span><span class="ansi33"> 1377 </span><span class="ansi32">2:</span><span class="ansi33"> 1702 </span>
+  <span class="ansi32">Speed:</span><span class="ansi33"> 1273 MHz </span><span class="ansi32">min/max:</span><span class="ansi33"> 800/3200 MHz </span><span class="ansi32">Core speeds (MHz):</span><span class="ansi33"> </span><span class="ansi32">1:</span><span class="ansi33"> 1273 </span><span class="ansi32">2:</span><span class="ansi33"> 1609 </span>
 <span class="ansi32">Graphics:</span>
   <span class="ansi32">Device-1:</span><span class="ansi33"> Intel Xeon E3-1200 v3/4th Gen Core Processor Integrated Graphics </span>
   <span class="ansi32">driver:</span><span class="ansi33"> i915 </span><span class="ansi32">v:</span><span class="ansi33"> kernel </span>
@@ -50,7 +50,7 @@ $ inxi -ADGCmMnrS
   <span class="ansi32">IF-ID-1:</span><span class="ansi33"> virbr0 </span><span class="ansi32">state:</span><span class="ansi33"> down </span><span class="ansi32">mac:</span><span class="ansi33"> 52:54:00:d5:e8:1e </span>
   <span class="ansi32">IF-ID-2:</span><span class="ansi33"> virbr0-nic </span><span class="ansi32">state:</span><span class="ansi33"> down </span><span class="ansi32">mac:</span><span class="ansi33"> 52:54:00:d5:e8:1e </span>
 <span class="ansi32">Drives:</span>
-  <span class="ansi32">Local Storage:</span><span class="ansi33"> </span><span class="ansi32">total:</span><span class="ansi33"> 1.94 TiB </span><span class="ansi32">used:</span><span class="ansi33"> 860.34 GiB (43.4%) </span>
+  <span class="ansi32">Local Storage:</span><span class="ansi33"> </span><span class="ansi32">total:</span><span class="ansi33"> 1.94 TiB </span><span class="ansi32">used:</span><span class="ansi33"> 860.35 GiB (43.4%) </span>
   <span class="ansi32">ID-1:</span><span class="ansi33"> /dev/sda </span><span class="ansi32">vendor:</span><span class="ansi33"> Toshiba </span><span class="ansi32">model:</span><span class="ansi33"> DT01ABA100V </span><span class="ansi32">size:</span><span class="ansi33"> 931.51 GiB </span>
   <span class="ansi32">ID-2:</span><span class="ansi33"> /dev/sdb </span><span class="ansi32">vendor:</span><span class="ansi33"> Toshiba </span><span class="ansi32">model:</span><span class="ansi33"> DT01ACA100 </span><span class="ansi32">size:</span><span class="ansi33"> 931.51 GiB </span>
   <span class="ansi32">ID-3:</span><span class="ansi33"> /dev/sdc </span><span class="ansi32">vendor:</span><span class="ansi33"> LITE-ON IT </span><span class="ansi32">model:</span><span class="ansi33"> LDS-128L9S </span><span class="ansi32">size:</span><span class="ansi33"> 119.24 GiB </span>
