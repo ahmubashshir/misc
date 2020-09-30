@@ -14,3 +14,5 @@ exclude:
   - vendor
   - LICENSE.md
   - README.md
+
+theme: jekyll-theme-midnight
