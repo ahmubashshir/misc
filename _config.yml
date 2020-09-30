@@ -3,7 +3,8 @@ timezone: Asia/Dhaka
 email: ahm@disroot.org
 github_username:  ahmubashshir
 twitter_username: ahmubashshir
-
+kramdown:
+  input: GFM
 exclude:
   - .editorconfig
   - .git
