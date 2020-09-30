@@ -1,12 +1,13 @@
 # [HSC] Business Studies Routine
-| |10:00-10:40|10:45-11:20|11:25-12:05|
-|:---|:---|:---|---|
-|Sat|English[eng]|Statistics[sta]|Production[pro]|
-|Sun|Bangla[ban]|-|Production[pro]|
-|Mon|ICT[ict]|Management[man]|-|
-|Tue|English[eng]|Economics[eco]|Management[man]|
-|Wed|Bangla[ban]|Home Economics[hom]|English[eng]|
-|Thu|ICT[ict]|Statistics[sta]|Home Economics[hom]|
+
+|			|10:00-10:40	|10:45-11:20		|11:25-12:05		|
+|	:---	|	:---		|	:---			|	:---			|
+|	Sat		|English[eng]	|Statistics[sta]	|Production[pro]	|
+|	Sun		|Bangla[ban]	|		-			|Production[pro]	|
+|	Mon		|ICT[ict]		|Management[man]	|		-			|
+|	Tue		|English[eng]	|Economics[eco]		|Management[man]	|
+|	Wed		|Bangla[ban]	|Home Economics[hom]|English[eng]		|
+|	Thu		|ICT[ict]		|Statistics[sta]	|Home Economics[hom]|
 
 [ban]: https://us04web.zoom.us/j/73162499099?pwd=S3dtU0g2Ylk2YXo5UlMvZm5RWEsydz09
 [eco]: https://us04web.zoom.us/j/73573816326?pwd=ZTVrZzhSL3g3OEdYd1lLSm1CSWNQZz09
