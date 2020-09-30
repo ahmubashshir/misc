@@ -1,0 +1,15 @@
+
+timezone: Asia/Dhaka
+email: ahm@disroot.org
+github_username:  ahmubashshir
+twitter_username: ahmubashshir
+
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - LICENSE.md
+  - README.md
