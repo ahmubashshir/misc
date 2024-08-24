@@ -1,0 +1,118 @@
+<element name="routine">
+  <attribute name="type">
+    <choice>
+      <value>class</value>
+      <value>mid-term</value>
+      <value>final</value>
+    </choice>
+  </attribute>
+  <element name="institute">
+    <text/>
+  </element>
+  <element name="department">
+    <text/>
+  </element>
+  <element name="semester">
+    <text/>
+  </element>
+  <element name="batch">
+    <text/>
+  </element>
+  <element name="faculties">
+    <oneOrMore>
+      <element name="faculty">
+        <attribute name="id">
+          <text/>
+        </attribute>
+        <mixed>
+          <text/>
+          <optional>
+            <element name="phone">
+              <text/>
+            </element>
+          </optional>
+        </mixed>
+      </element>
+    </oneOrMore>
+  </element>
+  <element name="courses">
+    <oneOrMore>
+      <element name="course">
+        <attribute name="id">
+          <text/>
+        </attribute>
+        <attribute name="faculty">
+          <text/>
+        </attribute>
+        <optional>
+          <attribute name="lab">
+            <choice>
+              <value>true</value>
+              <value>false</value>
+            </choice>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="theory">
+            <choice>
+              <value>true</value>
+              <value>false</value>
+            </choice>
+          </attribute>
+        </optional>
+        <text/>
+      </element>
+    </oneOrMore>
+  </element>
+  <element name="timeslots">
+    <oneOrMore>
+      <element name="slot">
+        <attribute name="id">
+          <text/>
+        </attribute>
+        <text/>
+      </element>
+    </oneOrMore>
+  </element>
+  <element name="table">
+    <element name="break">
+      <attribute name="from">
+        <text/>
+      </attribute>
+      <attribute name="to">
+        <text/>
+      </attribute>
+    </element>
+    <oneOrMore>
+      <element name="slots">
+        <attribute name="day">
+          <text/>
+        </attribute>
+        <oneOrMore>
+          <element name="slot">
+            <attribute name="course">
+              <text/>
+            </attribute>
+            <attribute name="from">
+              <text/>
+            </attribute>
+            <attribute name="to">
+              <text/>
+            </attribute>
+            <attribute name="room">
+              <text/>
+            </attribute>
+            <optional>
+              <attribute name="type">
+                <choice>
+                  <value>lab</value>
+                  <value>theory</value>
+                </choice>
+              </attribute>
+            </optional>
+          </element>
+        </oneOrMore>
+      </element>
+    </oneOrMore>
+  </element>
+</element>

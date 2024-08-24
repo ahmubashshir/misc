@@ -1,0 +1,39 @@
+<!ELEMENT routine (institute, department, semester, batch, faculties, courses, timeslots, table)>
+<!ATTLIST routine type (class | mid-term | final) #REQUIRED>
+
+<!ELEMENT institute (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT batch (#PCDATA)>
+
+<!ELEMENT faculties (faculty+)>
+<!ELEMENT faculty (#PCDATA | phone)>
+<!ATTLIST faculty id CDATA #REQUIRED>
+
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT courses (course+)>
+<!ELEMENT course (#PCDATA)>
+<!ATTLIST course id CDATA #REQUIRED>
+<!ATTLIST course faculty CDATA #REQUIRED>
+<!ATTLIST course lab (true | false) #IMPLIED>
+<!ATTLIST course theory (true | false) #IMPLIED>
+
+<!ELEMENT timeslots (slot+)>
+<!ELEMENT slot (#PCDATA)>
+<!ATTLIST slot id CDATA #REQUIRED>
+
+<!ELEMENT table (break, slots+)>
+<!ELEMENT break EMPTY>
+<!ATTLIST break from CDATA #REQUIRED>
+<!ATTLIST break to CDATA #REQUIRED>
+
+<!ELEMENT slots (slot+)>
+<!ATTLIST slots day CDATA #REQUIRED>
+
+<!ELEMENT slot EMPTY>
+<!ATTLIST slot course CDATA #REQUIRED>
+<!ATTLIST slot from CDATA #REQUIRED>
+<!ATTLIST slot to CDATA #REQUIRED>
+<!ATTLIST slot room CDATA #REQUIRED>
+<!ATTLIST slot type (lab | theory) #IMPLIED>
