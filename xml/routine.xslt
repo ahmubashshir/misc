@@ -50,7 +50,7 @@
 					<thead>
 						<tr>
 							<th></th>
-							<xsl:apply-templates select="timeslots/slot"/>
+							<xsl:apply-templates select="timeslots/time"/>
 						</tr>
 					</thead>
 					<tbody>
@@ -101,10 +101,10 @@
 					<xsl:otherwise>
 						<th><xsl:value-of select="/routine/faculties/faculty[$current]/@id" /></th>
 						<td><xsl:value-of select="/routine/faculties/faculty[$current]/text()" />
-						<xsl:if test="/routine/faculties/faculty[$current]/phone">
+						<xsl:if test="/routine/faculties/faculty[$current]/@phone">
 							<br />
 							<xsl:text>( </xsl:text>
-							<xsl:value-of select="/routine/faculties/faculty[$current]/phone" />
+							<xsl:value-of select="/routine/faculties/faculty[$current]/@phone" />
 							<xsl:text> )</xsl:text>
 						</xsl:if>
 						</td>
@@ -135,7 +135,7 @@
 	</xsl:template>
 	<xsl:template name="time-slots">
 		<xsl:param name="current-slot"/>
-		<xsl:variable name="max-slots" select="count(/routine/timeslots/slot)"/>
+		<xsl:variable name="max-slots" select="count(/routine/timeslots/time)"/>
 		<xsl:variable name="break-from" select="/routine/table/break/@from" />
 		<xsl:variable name="break-to" select="/routine/table/break/@to" />
 		<xsl:if test="$current-slot &lt; $max-slots">
@@ -173,10 +173,10 @@
 		</xsl:if>
 	</xsl:template>
 
-	<xsl:template match="timeslots/slot">
-		<xsl:variable name="next-slot" select="position() + 1"/>
+	<xsl:template match="timeslots/time">
+		<xsl:variable name="next-time" select="position() + 1"/>
 		<xsl:if test="position() &lt; last()">
-			<th><xsl:value-of select="text()"/> - <xsl:value-of select="../slot[$next-slot]" /></th>
+			<th><xsl:value-of select="text()"/> - <xsl:value-of select="../time[$next-time]" /></th>
 		</xsl:if>
 	</xsl:template>
 

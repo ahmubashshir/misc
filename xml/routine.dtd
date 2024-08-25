@@ -7,8 +7,9 @@
 <!ELEMENT batch (#PCDATA)>
 
 <!ELEMENT faculties (faculty+)>
-<!ELEMENT faculty (#PCDATA | phone)>
+<!ELEMENT faculty (#PCDATA | phone)*>
 <!ATTLIST faculty id CDATA #REQUIRED>
+<!ATTLIST faculty phone CDATA #IMPLIED>
 
 <!ELEMENT phone (#PCDATA)>
 
@@ -19,9 +20,9 @@
 <!ATTLIST course lab (true | false) #IMPLIED>
 <!ATTLIST course theory (true | false) #IMPLIED>
 
-<!ELEMENT timeslots (slot+)>
-<!ELEMENT slot (#PCDATA)>
-<!ATTLIST slot id CDATA #REQUIRED>
+<!ELEMENT timeslots (time+)>
+<!ELEMENT time (#PCDATA)>
+<!ATTLIST time id CDATA #REQUIRED>
 
 <!ELEMENT table (break, slots+)>
 <!ELEMENT break EMPTY>

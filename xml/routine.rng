@@ -1,4 +1,4 @@
-<element name="routine">
+<element name="routine" xmlns="http://relaxng.org/ns/structure/1.0">
   <attribute name="type">
     <choice>
       <value>class</value>
@@ -24,14 +24,12 @@
         <attribute name="id">
           <text/>
         </attribute>
-        <mixed>
-          <text/>
-          <optional>
-            <element name="phone">
-              <text/>
-            </element>
-          </optional>
-        </mixed>
+        <optional>
+          <attribute name="phone">
+            <text/>
+          </attribute>
+        </optional>
+        <text/>
       </element>
     </oneOrMore>
   </element>
@@ -66,7 +64,7 @@
   </element>
   <element name="timeslots">
     <oneOrMore>
-      <element name="slot">
+      <element name="time">
         <attribute name="id">
           <text/>
         </attribute>
