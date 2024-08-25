@@ -86,7 +86,15 @@
     <oneOrMore>
       <element name="slots">
         <attribute name="day">
-          <text/>
+          <choice>
+            <value>sat</value>
+            <value>sun</value>
+            <value>mon</value>
+            <value>tue</value>
+            <value>wed</value>
+            <value>thu</value>
+            <value>fri</value>
+          </choice>
         </attribute>
         <oneOrMore>
           <element name="slot">

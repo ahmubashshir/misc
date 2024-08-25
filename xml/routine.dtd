@@ -29,7 +29,7 @@
 <!ATTLIST break to CDATA #REQUIRED>
 
 <!ELEMENT slots (slot+)>
-<!ATTLIST slots day CDATA #REQUIRED>
+<!ATTLIST slots day (sat | sun | mon | tue | wed | thu | fri) #REQUIRED>
 
 <!ELEMENT slot EMPTY>
 <!ATTLIST slot course CDATA #REQUIRED>
