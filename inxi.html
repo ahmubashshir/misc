@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-<title>My PC Config: inxi -ADGCmMnrS</title>
+<title>My PC Config: inxi --color 96 --basic --audio --cpu --disk --memory</title>
 <style type="text/css">
 .ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
 .body_foreground { color: #AAAAAA; }
@@ -15,7 +15,7 @@
 </head>
 <body class="body_foreground body_background" style="font-size: normal;" >
 <pre class="ansi2html-content">
-$ inxi -ADGCmMnrS
+$ inxi --color 96 --basic --audio --cpu --disk --memory
 <span class="ansi32">System:</span>
   <span class="ansi32">Host:</span><span class="ansi33"> mubashshir-pc </span><span class="ansi32">Kernel:</span><span class="ansi33"> 6.14.2-zen1-1-zen </span><span class="ansi32">arch:</span><span class="ansi33"> x86_64 </span><span class="ansi32">bits:</span><span class="ansi33"> 64</span>
   <span class="ansi32">Desktop:</span><span class="ansi33"> Xfce </span><span class="ansi32">v:</span><span class="ansi33"> 4.20.1 </span><span class="ansi32">Distro:</span><span class="ansi33"> EndeavourOS</span>
@@ -24,7 +24,7 @@ $ inxi -ADGCmMnrS
     <span class="ansi32">serial:</span><span class="ansi33"> 07E2610_OC1E304676 </span><span class="ansi32">UEFI:</span><span class="ansi33"> American Megatrends LLC. </span><span class="ansi32">v:</span><span class="ansi33"> 1.I0</span>
     <span class="ansi32">date:</span><span class="ansi33"> 12/27/2024</span>
 <span class="ansi32">Memory:</span>
-  <span class="ansi32">System RAM:</span><span class="ansi33"> </span><span class="ansi32">total:</span><span class="ansi33"> 16 GiB </span><span class="ansi32">available:</span><span class="ansi33"> 15.22 GiB </span><span class="ansi32">used:</span><span class="ansi33"> 7.26 GiB (47.7%)</span>
+  <span class="ansi32">System RAM:</span><span class="ansi33"> </span><span class="ansi32">total:</span><span class="ansi33"> 16 GiB </span><span class="ansi32">available:</span><span class="ansi33"> 15.22 GiB </span><span class="ansi32">used:</span><span class="ansi33"> 9.12 GiB (59.9%)</span>
   <span class="ansi32">Array-1:</span><span class="ansi33"> </span><span class="ansi32">capacity:</span><span class="ansi33"> 128 GiB </span><span class="ansi32">slots:</span><span class="ansi33"> 4 </span><span class="ansi32">modules:</span><span class="ansi33"> 1 </span><span class="ansi32">EC:</span><span class="ansi33"> None</span>
   <span class="ansi32">Device-1:</span><span class="ansi33"> DIMMA1 </span><span class="ansi32">type:</span><span class="ansi33"> no module installed</span>
   <span class="ansi32">Device-2:</span><span class="ansi33"> DIMMA2 </span><span class="ansi32">type:</span><span class="ansi33"> DDR5 </span><span class="ansi32">size:</span><span class="ansi33"> 16 GiB </span><span class="ansi32">speed:</span><span class="ansi33"> 4800 MT/s</span>
@@ -38,11 +38,8 @@ $ inxi -ADGCmMnrS
   <span class="ansi32">Device-1:</span><span class="ansi33"> NVIDIA GM107 [GeForce GTX 750] </span><span class="ansi32">driver:</span><span class="ansi33"> nvidia </span><span class="ansi32">v:</span><span class="ansi33"> 570.133.07</span>
   <span class="ansi32">Display:</span><span class="ansi33"> unspecified </span><span class="ansi32">server:</span><span class="ansi33"> X.Org </span><span class="ansi32">v:</span><span class="ansi33"> 21.1.16 </span><span class="ansi32">with:</span><span class="ansi33"> Xwayland </span><span class="ansi32">v:</span><span class="ansi33"> 24.1.6</span>
     <span class="ansi32">driver:</span><span class="ansi33"> </span><span class="ansi32">X:</span><span class="ansi33"> </span><span class="ansi32">loaded:</span><span class="ansi33"> nvidia </span><span class="ansi32">gpu:</span><span class="ansi33"> nvidia,nvidia-nvswitch </span><span class="ansi32">resolution:</span><span class="ansi33"> N/A</span>
-  <span class="ansi32">API:</span><span class="ansi33"> EGL </span><span class="ansi32">v:</span><span class="ansi33"> 1.5 </span><span class="ansi32">drivers:</span><span class="ansi33"> nouveau,nvidia,swrast</span>
-    <span class="ansi32">platforms:</span><span class="ansi33"> gbm,x11,surfaceless,device</span>
   <span class="ansi32">API:</span><span class="ansi33"> OpenGL </span><span class="ansi32">v:</span><span class="ansi33"> 4.6.0 </span><span class="ansi32">compat-v:</span><span class="ansi33"> 4.5 </span><span class="ansi32">vendor:</span><span class="ansi33"> nvidia mesa </span><span class="ansi32">v:</span><span class="ansi33"> 570.133.07</span>
     <span class="ansi33"></span><span class="ansi32">renderer:</span><span class="ansi33"> NVIDIA GeForce GTX 750/PCIe/SSE2</span>
-  <span class="ansi32">API:</span><span class="ansi33"> Vulkan </span><span class="ansi32">v:</span><span class="ansi33"> 1.4.309 </span><span class="ansi32">drivers:</span><span class="ansi33"> N/A </span><span class="ansi32">surfaces:</span><span class="ansi33"> xcb,xlib</span>
   <span class="ansi32">Info:</span><span class="ansi33"> </span><span class="ansi32">Tools:</span><span class="ansi33"> </span><span class="ansi32">api:</span><span class="ansi33"> eglinfo, glxinfo, vulkaninfo </span><span class="ansi32">de:</span><span class="ansi33"> xfce4-display-settings</span>
     <span class="ansi32">gpu:</span><span class="ansi33"> nvidia-smi </span><span class="ansi32">wl:</span><span class="ansi33"> wayland-info </span><span class="ansi32">x11:</span><span class="ansi33"> xdpyinfo, xprop, xrandr</span>
 <span class="ansi32">Audio:</span>
@@ -54,76 +51,15 @@ $ inxi -ADGCmMnrS
   <span class="ansi32">Server-1:</span><span class="ansi33"> PulseAudio </span><span class="ansi32">v:</span><span class="ansi33"> 17.0-43-g3e2bb </span><span class="ansi32">status:</span><span class="ansi33"> active (root, process)</span>
 <span class="ansi32">Network:</span>
   <span class="ansi32">Device-1:</span><span class="ansi33"> Realtek RTL8125 2.5GbE </span><span class="ansi32">driver:</span><span class="ansi33"> r8169</span>
-  <span class="ansi32">IF:</span><span class="ansi33"> eth0 </span><span class="ansi32">state:</span><span class="ansi33"> up </span><span class="ansi32">speed:</span><span class="ansi33"> 1000 Mbps </span><span class="ansi32">duplex:</span><span class="ansi33"> full </span><span class="ansi32">mac:</span><span class="ansi33"> 34:5a:60:51:a6:3f</span>
   <span class="ansi32">Device-2:</span><span class="ansi33"> MEDIATEK MT7922 802.11ax PCI Express Wireless Network Adapter</span>
     <span class="ansi32">driver:</span><span class="ansi33"> mt7921e</span>
-  <span class="ansi32">IF:</span><span class="ansi33"> wlan0 </span><span class="ansi32">state:</span><span class="ansi33"> down </span><span class="ansi32">mac:</span><span class="ansi33"> 7e:bc:f9:8c:1b:4a</span>
-  <span class="ansi32">IF-ID-1:</span><span class="ansi33"> potato-pc </span><span class="ansi32">state:</span><span class="ansi33"> unknown </span><span class="ansi32">speed:</span><span class="ansi33"> N/A </span><span class="ansi32">duplex:</span><span class="ansi33"> N/A </span><span class="ansi32">mac:</span><span class="ansi33"> N/A</span>
-  <span class="ansi32">IF-ID-2:</span><span class="ansi33"> virbr0 </span><span class="ansi32">state:</span><span class="ansi33"> down </span><span class="ansi32">mac:</span><span class="ansi33"> 52:54:00:b7:46:f2</span>
-  <span class="ansi32">IF-ID-3:</span><span class="ansi33"> ztppi45ca2 </span><span class="ansi32">state:</span><span class="ansi33"> unknown </span><span class="ansi32">speed:</span><span class="ansi33"> 10000 Mbps </span><span class="ansi32">duplex:</span><span class="ansi33"> full</span>
-    <span class="ansi32">mac:</span><span class="ansi33"> 06:21:7b:60:4f:d9</span>
 <span class="ansi32">Drives:</span>
   <span class="ansi32">Local Storage:</span><span class="ansi33"> </span><span class="ansi32">total:</span><span class="ansi33"> 1.94 TiB </span><span class="ansi32">used:</span><span class="ansi33"> 1.5 TiB (77.5%)</span>
   <span class="ansi32">ID-1:</span><span class="ansi33"> /dev/sda </span><span class="ansi32">vendor:</span><span class="ansi33"> Toshiba </span><span class="ansi32">model:</span><span class="ansi33"> DT01ABA100V </span><span class="ansi32">size:</span><span class="ansi33"> 931.51 GiB</span>
   <span class="ansi32">ID-2:</span><span class="ansi33"> /dev/sdb </span><span class="ansi32">vendor:</span><span class="ansi33"> LITE-ON IT </span><span class="ansi32">model:</span><span class="ansi33"> LDS-128L9S </span><span class="ansi32">size:</span><span class="ansi33"> 119.24 GiB</span>
   <span class="ansi32">ID-3:</span><span class="ansi33"> /dev/sdc </span><span class="ansi32">vendor:</span><span class="ansi33"> Toshiba </span><span class="ansi32">model:</span><span class="ansi33"> DT01ACA100 </span><span class="ansi32">size:</span><span class="ansi33"> 931.51 GiB</span>
-<span class="ansi32">Repos:</span>
-  <span class="ansi32">Active pacman repo servers in:</span><span class="ansi33"> /etc/pacman.conf</span>
-    <span class="ansi32">1: </span><span class="ansi33">https://repo.herecura.eu/herecura/x86_64</span>
-    <span class="ansi32">2: </span><span class="ansi33">https://ftp.f3l.de/~martchus/$repo/os/$arch</span>
-    <span class="ansi32">3: </span><span class="ansi33">https://martchus.no-ip.biz/repo/arch/$repo/os/$arch</span>
-    <span class="ansi32">4: </span><span class="ansi33">file:///var/cache/pacman/aur</span>
-  <span class="ansi32">Active pacman repo servers in:</span><span class="ansi33"> /etc/pacman.d/chaotic-mirrorlist</span>
-    <span class="ansi32">1: </span><span class="ansi33">https://bg-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">2: </span><span class="ansi33">https://br-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">3: </span><span class="ansi33">https://ca-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">4: </span><span class="ansi33">https://cdn-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">5: </span><span class="ansi33">https://cl-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">6: </span><span class="ansi33">https://de-2-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">7: </span><span class="ansi33">https://de-3-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">8: </span><span class="ansi33">https://de-4-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">9: </span><span class="ansi33">https://es-2-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">10: </span><span class="ansi33">https://es-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">11: </span><span class="ansi33">https://fr-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">12: </span><span class="ansi33">https://geo-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">13: </span><span class="ansi33">https://gr-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">14: </span><span class="ansi33">https://in-2-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">15: </span><span class="ansi33">https://in-3-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">16: </span><span class="ansi33">https://in-4-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">17: </span><span class="ansi33">https://in-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">18: </span><span class="ansi33">https://kr-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">19: </span><span class="ansi33">https://us-mi-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">20: </span><span class="ansi33">https://us-tx-mirror.chaotic.cx/$repo/$arch</span>
-    <span class="ansi32">21: </span><span class="ansi33">https://us-ut-mirror.chaotic.cx/$repo/$arch</span>
-  <span class="ansi32">Active pacman repo servers in:</span><span class="ansi33"> /etc/pacman.d/endeavouros-mirrorlist</span>
-    <span class="ansi32">1: </span><span class="ansi33">https://mirror.albony.xyz/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">2: </span><span class="ansi33">https://endeavouros.ip-connect.info/repo/$repo/$arch</span>
-    <span class="ansi32">3: </span><span class="ansi33">https://fosszone.csd.auth.gr/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">4: </span><span class="ansi33">https://ftp.belnet.be/mirror/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">5: </span><span class="ansi33">https://ftp.rz.tu-bs.de/pub/mirror/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">6: </span><span class="ansi33">https://md.mirrors.hacktegic.com/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">7: </span><span class="ansi33">https://mirror.accum.se/mirror/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">8: </span><span class="ansi33">https://mirror.alpix.eu/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">9: </span><span class="ansi33">https://mirror.archlinux.tw/EndeavourOS/repo/$repo/$arch</span>
-    <span class="ansi32">10: </span><span class="ansi33">https://mirror.freedif.org/EndeavourOS/repo/$repo/$arch</span>
-    <span class="ansi32">11: </span><span class="ansi33">https://mirror.funami.tech/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">12: </span><span class="ansi33">https://mirror.moson.org/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">13: </span><span class="ansi33">https://mirror.rznet.fr/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">14: </span><span class="ansi33">https://mirror.sjtu.edu.cn/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">15: </span><span class="ansi33">https://mirrors.c0urier.net/linux/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">16: </span><span class="ansi33">https://mirrors.gigenet.com/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">17: </span><span class="ansi33">https://mirrors.jlu.edu.cn/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">18: </span><span class="ansi33">https://mirrors.nxtgen.com/endeavouros-mirror/repo/$repo/$arch</span>
-    <span class="ansi32">19: </span><span class="ansi33">https://mirrors.tuna.tsinghua.edu.cn/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">20: </span><span class="ansi33">https://mirrors.urbanwave.co.za/endeavouros/repo/$repo/$arch</span>
-    <span class="ansi32">21: </span><span class="ansi33">https://www.miraa.jp/endeavouros/repo/$repo/$arch</span>
-  <span class="ansi32">Active pacman repo servers in:</span><span class="ansi33"> /etc/pacman.d/mirrorlist</span>
-    <span class="ansi32">1: </span><span class="ansi33">https://berlin.mirror.pkgbuild.com/$repo/os/$arch</span>
-    <span class="ansi32">2: </span><span class="ansi33">https://al.arch.niranjan.co/$repo/os/$arch</span>
-    <span class="ansi32">3: </span><span class="ansi33">https://london.mirror.pkgbuild.com/$repo/os/$arch</span>
-    <span class="ansi32">4: </span><span class="ansi33">https://losangeles.mirror.pkgbuild.com/$repo/os/$arch</span>
-    <span class="ansi32">5: </span><span class="ansi33">https://america.mirror.pkgbuild.com/$repo/os/$arch</span>
-  <span class="ansi32">No nix channels found for user:</span><span class="ansi33"> root</span>
+<span class="ansi32">Info:</span>
+  <span class="ansi32">Processes:</span><span class="ansi33"> 437 </span><span class="ansi32">Uptime:</span><span class="ansi33"> 13m </span><span class="ansi32">Shell:</span><span class="ansi33"> Sudo </span><span class="ansi32">inxi:</span><span class="ansi33"> 3.3.37</span>
 
 </pre>
 </body>

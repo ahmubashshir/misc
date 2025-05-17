@@ -1,9 +1,16 @@
 #!/bin/bash
 {
-	inxi_args=( -ADGCmMnrS )
+	inxi_args=(
+		--color 96
+		--basic
+		--audio
+		--cpu
+		--disk
+		--memory
+	)
 	echo creating pc-config html
 	{
 		echo "$ inxi ${inxi_args[@]}"
 		sudo inxi -c 18 "${inxi_args[@]}"
-	}|ansi2html --output-encoding=utf8 -s dracula -t "My PC Config: inxi ${inxi_args[@]}" > inxi.html
+	} | ansi2html --output-encoding=utf8 -s dracula -t "My PC Config: inxi ${inxi_args[*]}" > inxi.html
 }
